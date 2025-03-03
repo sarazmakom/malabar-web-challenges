@@ -102,7 +102,6 @@ body {
   background-color: #ff4a11;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
   position: fixed;
-  /* position: sticky; */
   bottom: 70px;
   right: 10px;
   z-index: 3;
