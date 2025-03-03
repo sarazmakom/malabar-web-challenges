@@ -25,6 +25,7 @@ h2 {
   aspect-ratio: 1 / 1;
   border: solid #3f0097 1px;
   max-width: 50%;
+  justify-content: center;
 }
 
 .tech-stack__list {
@@ -37,4 +38,7 @@ h2 {
   background-color: #3f0097;
   color: #ffffff;
   border-radius: 10px;
+}
+.profile {
+  display: flex;
 }
