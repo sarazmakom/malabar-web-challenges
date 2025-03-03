@@ -46,6 +46,9 @@ body {
   height: 48px;
   color: #ffffff;
   background: #370182;
+  position: sticky;
+  bottom: 0;
+  
 }
 
 /**
