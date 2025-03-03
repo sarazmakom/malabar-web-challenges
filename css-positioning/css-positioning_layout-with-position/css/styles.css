@@ -23,9 +23,9 @@ body {
   color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   padding: 10px 30px;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
-  left: 0;
 }
 
 .header__subheading {
@@ -46,8 +46,9 @@ body {
   height: 48px;
   color: #ffffff;
   background: #370182;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 /**
@@ -100,7 +101,7 @@ body {
   border-radius: 5px;
   background-color: #ff4a11;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-  position: fixed;
+  position: sticky;
   bottom: 0;
   z-index: 3;
 }
