@@ -48,7 +48,6 @@ body {
   background: #370182;
   position: sticky;
   bottom: 0;
-  
 }
 
 /**
@@ -63,11 +62,16 @@ body {
   background-color: #ebddfa;
   scroll-margin-top: 150px;
   border-radius: 5px;
+  position: relative;
+  z-index: -1;
 }
 
 .card__heading {
   color: #333;
   margin: 0 0 10px 0;
+  position: absolute;
+  top: 0;
+  left: 10px;
 }
 
 /**
