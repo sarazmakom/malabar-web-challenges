@@ -47,7 +47,7 @@ h1 {
 }
 
 .section {
-  width: 100%;
+  /* width: 2em; */
   background-color: var(--color-water-10);
   padding: 20px;
 }
@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 10rem;
   height: 100px;
 }
 
