@@ -94,3 +94,15 @@ h1 {
 .box--five img {
   width: 100%;
 }
+
+@media (min-width: 600px) {
+  .box--two {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box--two {
+    width: 400px;
+  }
+}
