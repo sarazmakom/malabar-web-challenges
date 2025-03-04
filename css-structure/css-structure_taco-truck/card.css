@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--card-bg);
-  color: var(--card-text);
+  background: var(--color-green);
+  color: var(--color-black);
   padding: 20px;
   border-radius: 5px;
   min-width: 300px;

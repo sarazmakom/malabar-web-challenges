@@ -12,8 +12,9 @@
 }
 :root {
   --color-black: #000000;
-  --color-pink: #ffc0cb;
+  --color-pink: #f4b1d5;
   --color-peach: #fddcd2;
+  --color-green: #c0e5a0;
 }
 
 body {
