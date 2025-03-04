@@ -1,0 +1,15 @@
+/* :root {
+  --color-black: black;
+  --color-pink: pink;
+} */
+.header {
+  position: sticky;
+  top: 0;
+  background: var(--color-black);
+  color: var(--color-pink);
+  padding: 20px;
+}
+
+.header__title {
+  margin: 0;
+}
