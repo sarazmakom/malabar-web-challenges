@@ -30,7 +30,7 @@ firstChoiceButton.addEventListener("click", () => {
 
 // 4. When clicking on the second choice, the button should be shown with an active state. Do you see why it isn't working?
 secondChoiceButton.addEventListener("click", () => {
-  firstChoiceButton.classList.add("active-choice");
-  secondChoiceButton.classList.remove("active-choice");
+  firstChoiceButton.classList.remove("active-choice");
+  secondChoiceButton.classList.add("active-choice");
   console.log("Selected second choice");
 });
