@@ -30,4 +30,5 @@ console.log(remainingDays);
 const percentageLifeLived = (daysLived / (80 * 365)) * 100;
 console.log(percentageLifeLived);
 
-
+const daysSlept = (daysLived * 8) / 24;
+console.log(daysSlept);
