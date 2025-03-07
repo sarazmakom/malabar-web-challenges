@@ -23,3 +23,6 @@ console.log("Your current age is: " + currentAge);
 
 const daysLived = currentAge * 365;
 console.log(daysLived);
+
+const remainingDays = 80 * 365 - daysLived;
+console.log(remainingDays);
