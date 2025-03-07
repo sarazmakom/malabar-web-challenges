@@ -18,3 +18,7 @@ Let's build a small program to track your savings goals!
 let startingBalance = 1000;
 let monthlyContribution = 100;
 let months = 24;
+
+let totalSavings = startingBalance + monthlyContribution * months;
+
+console.log(totalSavings);
