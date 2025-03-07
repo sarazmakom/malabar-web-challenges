@@ -25,3 +25,12 @@ const totalCost = mealCost + tipAmount;
 console.log("Meal cost:", mealCost);
 console.log("Tip amount:", tipAmount);
 console.log("Total cost:", totalCost);
+
+console.log(
+  "Meal cost is",
+  mealCost,
+  "plus the tip amount which is",
+  tipAmount,
+  "which means that the total cost is",
+  totalCost
+);
