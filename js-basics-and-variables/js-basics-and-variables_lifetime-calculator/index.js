@@ -22,13 +22,18 @@ const currentAge = Number(process.argv[2]); // This takes the `<age>` entered in
 console.log("Your current age is: " + currentAge);
 
 const daysLived = currentAge * 365;
-console.log(daysLived);
+console.log("Total number of days lived: " + daysLived);
 
 const remainingDays = 80 * 365 - daysLived;
-console.log(remainingDays);
+console.log("Estimated number of remaining days: " + remainingDays);
 
 const percentageLifeLived = (daysLived / (80 * 365)) * 100;
-console.log(percentageLifeLived);
+console.log(
+  "The percentage of life already lived, in relation to the expected life span: " +
+    percentageLifeLived
+);
 
 const daysSlept = (daysLived * 8) / 24;
-console.log(daysSlept);
+console.log(
+  "The cumulative number of days the person has spent sleeping: " + daysSlept
+);
