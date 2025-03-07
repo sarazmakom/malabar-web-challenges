@@ -16,5 +16,5 @@ lightModeButton.addEventListener("click", () => {
 });
 
 toggleButton.addEventListener("click", () => {
-  bodyElement.classList.toggle("button--toggle");
+  bodyElement.classList.toggle("button--dark");
 });
