@@ -1,7 +1,8 @@
 console.clear();
 
-const operand1 = 12;
-const operand2 = 4;
+let operand1 = 12;
+let operand2 = 4;
+let resetOperand1 = operand1;
 
 // ----- Mathematical Operations -----
 
@@ -27,7 +28,34 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-
+addButton.addEventListener("click", () => {
+  const result = operand1 + operand2;
+  console.log("Addition: " + operand1 + " + " + operand2 + " = " + result);
+});
+subtractButton.addEventListener("click", () => {
+  const result = operand1 - operand2;
+  console.log("Subtraction: " + operand1 + " - " + operand2 + " = " + result);
+});
+multiplyButton.addEventListener("click", () => {
+  const result = operand1 * operand2;
+  console.log(
+    "Multiplication: " + operand1 + " * " + operand2 + " = " + result
+  );
+});
+divideButton.addEventListener("click", () => {
+  const result = operand1 / operand2;
+  console.log("Division: " + operand1 + " / " + operand2 + " = " + result);
+});
+exponentButton.addEventListener("click", () => {
+  const result = operand1 ** operand2;
+  console.log(
+    "Exponentiation: " + operand1 + " ** " + operand2 + " = " + result
+  );
+});
+moduloButton.addEventListener("click", () => {
+  const result = operand1 % operand2;
+  console.log("Modulo: " + operand1 + " % " + operand2 + " = " + result);
+});
 // --^-- write your code here --^--
 
 // ----- Update the First Operand -----
@@ -43,5 +71,41 @@ Step 2: Add event listeners to update `operand1` based on the button clicked. Lo
 */
 
 // --v-- write your code here --v--
+const increaseBy1 = document.querySelector('[data-js="increase-by-one"]');
+const increaseBy5 = document.querySelector('[data-js="increase-by-five"]');
+const decreaseBy1 = document.querySelector('[data-js="decrease-by-one"]');
+const decreaseBy5 = document.querySelector('[data-js="decrease-by-five"]');
+const multiplyBy2 = document.querySelector('[data-js="multiply-by-two"]');
+const divideBy2 = document.querySelector('[data-js="divide-by-two"]');
 
+increaseBy1.addEventListener("click", () => {
+  operand1 = operand1 + 1;
+  console.log("Increased by 1: " + operand1);
+  operand1 = resetOperand1;
+});
+increaseBy5.addEventListener("click", () => {
+  operand1 = operand1 + 5;
+  console.log("Increased by 5: " + operand1);
+  operand1 = resetOperand1;
+});
+decreaseBy1.addEventListener("click", () => {
+  operand1 = operand1 - 1;
+  console.log("Decreased by 1: " + operand1);
+  operand1 = resetOperand1;
+});
+decreaseBy5.addEventListener("click", () => {
+  operand1 = operand1 - 5;
+  console.log("Decreased by 5: " + operand1);
+  operand1 = resetOperand1;
+});
+multiplyBy2.addEventListener("click", () => {
+  operand1 = operand1 * 2;
+  console.log("Multiplied by 2: " + operand1);
+  operand1 = resetOperand1;
+});
+divideBy2.addEventListener("click", () => {
+  operand1 = operand1 / 2;
+  console.log("Divided by 2: " + operand1);
+  resetOperand1 + operand1;
+});
 // --^-- write your code here --^--
