@@ -10,6 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+const title = "Small social media post";
+const text = "This here is a small social media post text.";
+let likesNumber = 1;
+const user = "Name Surname";
+const isReported = true;
 
 // --^-- write your code here --^--
 
@@ -18,5 +23,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+console.log(title);
+console.log(text);
+console.log(likesNumber);
+console.log(user);
+console.log(isReported);
+console.log(++likesNumber);
 
 // --^-- write your code here --^--
