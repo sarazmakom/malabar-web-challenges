@@ -4,6 +4,13 @@ console.clear();
 const SUPER_SECRET_PASSWORD = "h4x0r1337";
 
 const receivedPassword = "password1234";
+// const receivedPassword = "h4x0r1337";
+
+if (receivedPassword === SUPER_SECRET_PASSWORD) {
+  console.log("Welcome! You are logged in as Brunhilde1984.");
+} else {
+  console.log("Access denied!");
+}
 
 // Part 2: Even / Odd
 const number = 6;
