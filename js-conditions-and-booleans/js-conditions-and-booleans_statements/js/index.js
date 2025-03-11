@@ -47,8 +47,10 @@ const statement = currentHour < 17 ? "Still need to learn..." : "Partytime!!!";
 console.log(statement);
 
 // Part 5: Greeting
-const userName = "Archibald";
+// const userName = "Archibald";
+const userName = "Matilda";
 
-const greeting = "Hello " + "//enter your code here" + "!";
+const greeting =
+  "Hello " + (userName === "Archibald" ? "Coach " : userName) + "!";
 
 console.log(greeting);
