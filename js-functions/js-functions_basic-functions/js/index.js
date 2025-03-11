@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const bookTitle = "Parry Hotter And The Chambers Of Functions";
+const bookAuthor = "Rowan Joking";
+let bookRating = 4.5;
+let soldCopies = 70;
 // --^-- write your code here --^--
 
 /*
@@ -27,7 +30,18 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log("Title of the book: " + bookTitle);
+console.log("Author of the book: " + bookAuthor);
+console.log("Rating: " + bookRating);
+console.log("Copies sold: " + soldCopies);
 
+bookRating += 0.7;
+soldCopies += 700000;
+
+console.log("Title of the book: " + bookTitle);
+console.log("Author of the book: " + bookAuthor);
+console.log("Rating: " + bookRating);
+console.log("Copies sold: " + soldCopies);
 // --^-- write your code here --^--
 
 /*
