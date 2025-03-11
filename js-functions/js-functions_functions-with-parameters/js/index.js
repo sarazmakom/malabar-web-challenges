@@ -32,14 +32,18 @@ function greetMary() {
   console.log("Welcome Mary, good to see you again!");
 }
 
-greetAlice();
-greetBob();
-greetMary();
+// greetAlice();
+// greetBob();
+// greetMary();
 
 // --v-- write your code here --v--
 
-function greet() {}
-
+function greet(name) {
+  console.log("Welcome " + name + ", good to see you again!");
+}
+greet("Alice");
+greet("Bob");
+greet("Mary");
 // --^-- write your code here --^--
 
 console.log("-------------");
