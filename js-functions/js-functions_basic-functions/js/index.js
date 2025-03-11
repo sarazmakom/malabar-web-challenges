@@ -11,7 +11,7 @@ console.clear();
 // --v-- write your code here --v--
 const bookTitle = "Parry Hotter And The Chambers Of Functions";
 const bookAuthor = "Rowan Joking";
-let bookRating = 4.5;
+let bookRating = 4.7;
 let soldCopies = 70;
 // --^-- write your code here --^--
 
@@ -54,5 +54,22 @@ console.log("Copies sold: " + soldCopies);
 */
 
 // --v-- write your code here --v--
+function logBookData() {
+  console.log(
+    "The book title is",
+    bookTitle +
+      ", book's author is " +
+      bookAuthor +
+      ", book's rating is " +
+      bookRating +
+      " and sold copies " +
+      soldCopies
+  );
+}
 
+soldCopies += 600000;
+logBookData();
+
+soldCopies += 500000;
+logBookData();
 // --^-- write your code here --^--
