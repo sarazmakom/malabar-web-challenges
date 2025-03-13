@@ -15,29 +15,25 @@ const productTeaser = document.createElement("article");
 productTeaser.innerHTML = `<article class="product">
       <section class="product__body">
         <div class="product__text-container">
-          <h2 class="product__name">Anemonefish</h2>
+          <h2 class="product__name">${name}</h2>
           <ul class="product__categories">
-            <li class="product__category">Sea water</li>
-            <li class="product__category">Warmer waters</li>
-            <li class="product__category">Omnivorous</li>
+            <li class="product__category">${category1}</li>
+            <li class="product__category">${category2}</li>
+            <li class="product__category">${category3}</li>
           </ul>
-          <p class="product__description">
-            Anemonefish are omnivorous and can feed on undigested food from
-            their host anemones. When a sea anemone is not available in an
-            aquarium, the anemonefish may settle in some varieties of soft
-            corals, or large polyp stony corals.
+          <p class="product__description">${description}
           </p>
         </div>
         <div class="product__image-container">
           <img
             class="product__image"
-            src="https://unsplash.com/photos/rEM3cK8F1pk/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8bmVtb3xlbnwwfHx8fDE2NTk1MjE1MzA&force=true&w=640"
+            src="${imageSrc}"
             alt=""
           />
         </div>
       </section>
       <footer class="product__footer">
-        <span class="product__price">15,99 €</span>
+        <span class="product__price">${price}</span>
         <button type="button" class="product__buy-button">Buy</button>
       </footer>
     </article>`;
