@@ -33,16 +33,4 @@ footerElement.append(spanElement, buttonElement);
 
 document.body.append(articleElement);
 
-/* 
-<article class="post">
-      <p class="post__content">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-      </p>
-      <footer class="post__footer">
-        <span class="post__username">@username</span>
-        <button type="button" class="post__button" data-js="like-button">
-          ♥ Like
-        </button>
-      </footer>
-    </article>
-*/
+articleElement.addEventListener("click", handleLikeButtonClick);
