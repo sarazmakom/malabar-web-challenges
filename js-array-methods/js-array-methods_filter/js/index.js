@@ -34,7 +34,10 @@ const allCardsWith3Tags = cards.filter((card) => {
 });
 console.log("allCardsWith3Tags: ", allCardsWith3Tags);
 
-const allCardsThatAreNotBookmarked = null;
+const allCardsThatAreNotBookmarked = cards.filter((card) => {
+  return !card.isBookmarked;
+});
+console.log("allCardsThatAreNotBookmarked: ", allCardsThatAreNotBookmarked);
 
 const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
 
