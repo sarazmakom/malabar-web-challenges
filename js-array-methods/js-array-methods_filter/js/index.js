@@ -27,9 +27,12 @@ const cards = [
 const onlyCardWithIdTwo = cards.filter((card) => {
   return card.id === "2";
 });
-console.log(onlyCardWithIdTwo);
+console.log("onlyCardWithIdTwo: ", onlyCardWithIdTwo);
 
-const allCardsWith3Tags = null;
+const allCardsWith3Tags = cards.filter((card) => {
+  return card.tags.length === 3;
+});
+console.log("allCardsWith3Tags: ", allCardsWith3Tags);
 
 const allCardsThatAreNotBookmarked = null;
 
