@@ -10,7 +10,7 @@ const cards = [
   },
   {
     id: "2",
-    isBookmarked: false,
+    isBookmarked: true,
     question: "How often can I use <aside>?",
     answer: "As often as you like.",
     tags: ["html", "elements", "basic"],
@@ -39,7 +39,16 @@ const allCardsThatAreNotBookmarked = cards.filter((card) => {
 });
 console.log("allCardsThatAreNotBookmarked: ", allCardsThatAreNotBookmarked);
 
-const allCardsWithTagsHTMLOrJSThatAreBookmarked = null;
+const allCardsWithTagsHTMLOrJSThatAreBookmarked = cards.filter((card) => {
+  return (
+    card.isBookmarked &&
+    (card.tags.includes("html") || card.tags.includes("js"))
+  );
+});
+console.log(
+  "allCardsWithTagsHTMLOrJSThatAreBookmarked: ",
+  allCardsWithTagsHTMLOrJSThatAreBookmarked
+);
 
 export {
   onlyCardWithIdTwo,
