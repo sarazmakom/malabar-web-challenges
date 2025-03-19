@@ -7,9 +7,15 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
+    const contentType = response.headers.get("content-type");
     if (!response.ok) {
       throw new Error(`User doesn't exist. Status code ${response.status}`);
     }
+
+    if (!contentType.includes("application/json")) {
+      throw new Error(`Wrong content type: ${contentType}`);
+    }
+
     return await response.json();
   } catch (error) {
     return { error: error.message };
@@ -34,6 +40,7 @@ endpoints.forEach((endpoint) => {
       errorElement.textContent = result.error;
       userElement.innerHTML = "No user data available.";
       errorElement.innerHTML = `<p class="error" data-js="error">${error}</p>`;
+      errorElement.innerHTML = `<p class="error" data-js="error">${contentType}</p>`;
     } else {
       const user = result.data;
       userElement.innerHTML = `
