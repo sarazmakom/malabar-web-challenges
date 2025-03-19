@@ -44,8 +44,11 @@ const url = "https://swapi.py4e.com/api/people";
 async function fetchDataAndRender() {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(data);
-
-  return data;
+  // console.log(data.results);
+  // return data;
+  data.results.forEach((object) => {
+    const card = Card(object);
+    renderElement(card);
+  });
 }
 fetchDataAndRender();
