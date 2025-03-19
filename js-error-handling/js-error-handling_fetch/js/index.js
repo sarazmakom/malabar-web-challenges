@@ -7,7 +7,9 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
-
+    if (!response.ok) {
+      throw new Error(`User doesn't exist. Status code ${response.status}`);
+    }
     return await response.json();
   } catch (error) {
     return { error: error.message };
@@ -28,17 +30,17 @@ endpoints.forEach((endpoint) => {
 
   button.addEventListener("click", async () => {
     const result = await fetchUserData(endpoint.url);
-
     if (result.error) {
       errorElement.textContent = result.error;
       userElement.innerHTML = "No user data available.";
+      errorElement.innerHTML = `<p class="error" data-js="error">${error}</p>`;
     } else {
       const user = result.data;
       userElement.innerHTML = `
       <img alt="${user.first_name} ${user.last_name}" src="${user.avatar}" class="user__image"/>
       <h2>${user.first_name} ${user.last_name}</h2>
       `;
-      errorElement.textContent = "";
     }
+    errorElement.textContent = "";
   });
 });
