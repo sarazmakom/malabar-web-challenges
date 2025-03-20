@@ -9,11 +9,11 @@ async function fetchUserData(url) {
     const response = await fetch(url);
     const contentType = response.headers.get("content-type");
     if (!response.ok) {
-      throw new Error(`User doesn't exist. Status code ${response.status}`);
+      throw new Error(`Error! The user doesn't exist. Status code ${response.status}`);
     }
 
     if (!contentType.includes("application/json")) {
-      throw new Error(`Wrong content type: ${contentType}`);
+      throw new Error(`Error! The content type should be application/json and this is a: ${contentType}`);
     }
 
     return await response.json();
