@@ -12,11 +12,17 @@ function showTosError() {
   tosError.removeAttribute("hidden");
 }
 
+hideTosError();
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
   // --v-- write your code here --v--
-
+  if (!tosCheckbox.checked) {
+    showTosError();
+    return;
+  }
+  hideTosError();
   // --^-- write your code here --^--
 
   // eslint-disable-next-line no-alert
