@@ -47,7 +47,7 @@ h1 {
 }
 
 .section {
-  width: 100%;
+  /* width: 2em; */
   background-color: var(--color-water-10);
   padding: 20px;
 }
@@ -62,7 +62,7 @@ h1 {
 .box--one {
   background-color: lightblue;
 
-  width: 100px;
+  width: 10rem;
   height: 100px;
 }
 
@@ -94,3 +94,29 @@ h1 {
 .box--five img {
   width: 100%;
 }
+
+@media (min-width: 600px) {
+  .box--two {
+    width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box--two {
+    width: 400px;
+  }
+}
+
+@media (orientation: landscape) {
+  .box--three {
+    height: 50px;
+    width: 250px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .box--four {
+    background-color: lightsalmon;
+  }
+}
+
