@@ -1,4 +1,4 @@
-@import './variables.css';
+@import "./variables.css";
 
 *,
 *::before,
@@ -72,7 +72,11 @@ h1 {
 }
 
 .error {
-  color: var(--error-accent);
+  color: lightpink;
   line-height: 3rem;
   font-size: 1.2rem;
+  background-color: rgb(49, 25, 102);
+  margin: 1em;
+  padding: 1em;
+  border-radius: 0.5rem;
 }
