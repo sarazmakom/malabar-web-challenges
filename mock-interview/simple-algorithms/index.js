@@ -12,7 +12,6 @@ function maxOfTwoNumbers(num1, num2) {
 }
 
 // Find the longest word
-
 // TODO:
 /*
   1. Initialize a non constant variable as empty string let longest = ''; 
@@ -37,13 +36,23 @@ function findLongestWord(words) {
 }
 
 // Calculate the sum
-
+// TODO:
+/* 
+  1.initialize a variable to store the sum - let totalSum = 0;
+  2. use a for loop to iterate through each number in the array
+  3. add each number to the totalSum variable
+		4. return totalSum after loop
+   */
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(numbers) {
-  // TODO:
+  let totalSum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    totalSum += numbers[i];
+  }
+  return totalSum;
 }
-
+console.log(sumNumbers(numbers));
 // Calculate the average length of the words
 
 const words2 = [
