@@ -9,5 +9,7 @@
   "author": "J-1000",
   "dependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "keywords": [],
+  "license": "ISC"
 }
