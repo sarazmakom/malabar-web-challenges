@@ -1,6 +1,14 @@
 // Find the maximum
+// TODO:
+/* 
+write a return statement that compares the value of two parameters 
+that are passed to the function
+if the first parameter is bigger than the second 
+then return the first parameter, 
+otherwise return the second parameter
+*/
 function maxOfTwoNumbers(num1, num2) {
-  // TODO:
+  return num1 > num2 ? num1 : num2;
 }
 
 // Find the longest word
@@ -26,8 +34,6 @@ function findLongestWord(words) {
   }
   return longestWord;
 }
-
-console.log("fun", findLongestWord(words));
 
 // Calculate the sum
 
