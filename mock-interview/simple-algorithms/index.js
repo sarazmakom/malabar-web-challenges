@@ -10,6 +10,7 @@ otherwise return the second parameter
 function maxOfTwoNumbers(num1, num2) {
   return num1 > num2 ? num1 : num2;
 }
+// console.log(maxOfTwoNumbers(124, 890)); //result the bigger number
 
 // Find the longest word
 // TODO:
@@ -34,6 +35,7 @@ function findLongestWord(words) {
   }
   return longestWord;
 }
+// console.log(findLongestWord(words)); //result Inception
 
 // Calculate the sum
 // TODO:
@@ -52,7 +54,8 @@ function sumNumbers(numbers) {
   }
   return totalSum;
 }
-console.log(sumNumbers(numbers));
+// console.log(sumNumbers(numbers)); //result 87
+
 // Calculate the average length of the words
 
 const words2 = [
