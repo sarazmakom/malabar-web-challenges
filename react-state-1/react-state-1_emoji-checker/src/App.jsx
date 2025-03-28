@@ -1,13 +1,17 @@
 import "./styles.css";
+import { useState } from "react";
 
 export default function App() {
-  let code = "?";
+  // let code = "?";
 
   const validCode = "🐡🐠🐋";
 
+  const [code, setCode] = useState("");
+
   function handleClick(emoji) {
-    console.log(emoji);
-    console.log(code);
+    setCode(code + emoji);
+    console.log("emoji", emoji);
+    console.log("code", code);
   }
 
   return (
