@@ -42,7 +42,12 @@ export default function App() {
 
   return (
     <div className="app">
-      <Card name="🍌 banana" />
+      <h1>Fruits</h1>
+      {fruits?.map((fruit, index) => (
+        <div key={index}>
+          <Card id={fruit.id} name={fruit.name} />
+        </div>
+      ))}
     </div>
   );
 }
