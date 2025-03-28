@@ -45,7 +45,7 @@ export default function App() {
       <h1>Fruits</h1>
       {fruits?.map((fruit, index) => (
         <div key={index}>
-          <Card id={fruit.id} name={fruit.name} />
+          <Card id={fruit.id} name={fruit.name} color={fruit.color} />
         </div>
       ))}
     </div>
