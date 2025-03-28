@@ -1,3 +1,11 @@
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Button color="purple" disabled={false} text="Click me!" />;
+}
+
+function Button({ color, disabled, text }) {
+  return (
+    <button style={{ backgroundColor: color }} disabled={disabled}>
+      {text}
+    </button>
+  );
 }
