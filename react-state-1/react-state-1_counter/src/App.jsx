@@ -2,16 +2,13 @@ import { useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  // let count = 0;
   const [count, setCount] = useState(0);
 
   function handleCountIncrease() {
     setCount(count + 1);
-    console.log("increase", count);
   }
   function handleCountDecrease() {
     setCount(count - 1);
-    console.log("decrease", count);
   }
 
   return (
