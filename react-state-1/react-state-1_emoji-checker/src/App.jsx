@@ -14,6 +14,11 @@ export default function App() {
     console.log("code", code);
   }
 
+  function handleReset() {
+    setCode("");
+    console.log("reset");
+  }
+
   return (
     <div className="container">
       <div className="button-container">
@@ -49,12 +54,7 @@ export default function App() {
         </button>
       </div>
 
-      <button
-        type="button"
-        onClick={() => {
-          console.log("Reset Code!");
-        }}
-      >
+      <button type="button" onClick={handleReset}>
         Reset
       </button>
 
