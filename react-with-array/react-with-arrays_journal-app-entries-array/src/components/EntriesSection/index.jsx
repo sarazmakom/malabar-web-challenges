@@ -4,6 +4,7 @@ import Entry from "../Entry";
 import Tabs from "../Tabs";
 import Tab from "../Tab";
 import Badge from "../Badge";
+import { Fragment } from "react";
 
 export default function EntriesSection() {
   const entries = [
@@ -47,14 +48,11 @@ export default function EntriesSection() {
         </Tab>
       </Tabs>
       <div className="entries-section__entries">
-        {entries.map((entry) => (
-          <Entry
-            key={entry.id}
-            date={entry.date}
-            motto={entry.motto}
-            notes={entry.notes}
-          />
-          // <Divider />
+        {entries.map((entry, index) => (
+          <Fragment key={entry.id}>
+            <Entry date={entry.date} motto={entry.motto} notes={entry.notes} />
+            {index < entries.length - 1 && <Divider />}
+          </Fragment>
         ))}
       </div>
     </section>
