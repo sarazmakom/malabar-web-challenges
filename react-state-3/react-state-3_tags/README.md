@@ -1,4 +1,5 @@
-# React State 3: Tags
+ `\
+ # React State 3: Tags
 
 In the `./src/App.jsx` file, there is a `tags` state passed to the [`List`](./src/components/List/index.jsx) component. Each tag has a delete button.
 
