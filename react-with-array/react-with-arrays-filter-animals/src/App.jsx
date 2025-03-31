@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
 const animals = [
@@ -33,7 +33,7 @@ export default function App() {
   const [habitat, setHabitat] = useState("");
 
   const animalsDisplay = animals.filter((animal) => animal.habitat === habitat);
-  
+
   console.log(habitat, "habitat");
   console.log(animalsDisplay, "animalsDisplay");
 
