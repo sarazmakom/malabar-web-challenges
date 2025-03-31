@@ -30,5 +30,39 @@ const animals = [
 const habitats = ["Mountains", "Ocean", "Forest", "Domestic Animal"];
 
 export default function App() {
-  return <h1>Animal Filter</h1>;
+  const [habitat, setHabitat] = useState("");
+
+  const animalsDisplay = animals.filter((animal) => animal.habitat === habitat);
+  
+  console.log(habitat, "habitat");
+  console.log(animalsDisplay, "animalsDisplay");
+
+  return (
+    <>
+      <h1>Animal filter</h1>
+      <ul>
+        {habitats.map((element) => (
+          <li key={element}>
+            <button
+              className={
+                element === habitat ? "button selectedHabitat" : "button"
+              }
+              onClick={() => setHabitat(element)}
+            >
+              {element}
+            </button>
+          </li>
+        ))}
+      </ul>
+
+      <ul>
+        {animalsDisplay.map((animal) => (
+          <li key={animal.id}>
+            <h3>{animal.name}</h3>
+            <p>{animal.emoji}</p>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
 }
