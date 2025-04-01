@@ -27,7 +27,11 @@ export default function PokemonList() {
 
   return (
     <main>
-      <button type="button" onClick={() => setCurrentPage(prevPage)}>
+      <button
+        type="button"
+        onClick={() => setCurrentPage(prevPage)}
+        disabled={!prevPage}
+      >
         Previous Page
       </button>
       <button type="button" onClick={() => setCurrentPage(nextPage)}>
