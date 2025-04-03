@@ -35,3 +35,6 @@ li {
   border: 2px solid lightblue;
   padding: 1rem;
 }
+.selectedHabitat {
+  background-color: lightblue;
+}
