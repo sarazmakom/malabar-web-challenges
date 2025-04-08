@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { volumes } from "@/resources/lib/data";
 
 export default function TheTwoTowers() {
@@ -17,6 +18,12 @@ export default function TheTwoTowers() {
           </li>
         ))}
       </ul>
+      <Image
+        src="/images/the-two-towers.png"
+        alt="The Two Towers"
+        width={140}
+        height={230}
+      ></Image>
     </>
   );
 }

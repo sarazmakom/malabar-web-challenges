@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { volumes } from "@/resources/lib/data";
+import Image from "next/image";
 
 export default function TheFellowshipOfTheRing() {
   const volume = volumes.find(
@@ -19,6 +20,12 @@ export default function TheFellowshipOfTheRing() {
           </li>
         ))}
       </ul>
+      <Image
+        src="/images/the-fellowship-of-the-ring.png"
+        alt="The Fellowship Of The Ring"
+        width={140}
+        height={230}
+      ></Image>
     </>
   );
 }
