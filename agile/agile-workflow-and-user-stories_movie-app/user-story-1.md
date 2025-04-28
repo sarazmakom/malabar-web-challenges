@@ -4,7 +4,7 @@
 
 **As a** `user` <br>
 **I want to** `see a list of movies` <br>
-**so that** `so that I can browse the movies` <br>
+**so that** `so that I can browse the available movies` <br>
 
 ## Description
 
@@ -24,24 +24,14 @@ An error message is displayed saying:
 
 ## Tasks
 
+1. create a feature branch movie-list
+2. fetch the list of current movies
+3. implement the error handling logic 
+4. create the component Movie which renders:
+- the name of the movie
+- the image of the movie
+- the rating of the movie
+5. create the component MovieList which 
+maps through the list of movies and renders a Movie component 
+6. render the MovieList in index.js
 
-Set up the page header with "movie app" text
-
-Create basic grid layout for movie list
-
-Create a MovieCard component with cover, rating, and title
-
-Fetch movies from the API
-
-Display movies in the grid
-
-Overlay rating on top-right of cover image
-
-Align movie title under cover (left-aligned)
-
-Handle API errors and display error message
-
-Add responsive styles (for mobile/desktop)
-
-Test layout and error handling in different browsers/screen sizes
--
