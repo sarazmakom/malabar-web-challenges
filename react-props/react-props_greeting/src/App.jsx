@@ -1,3 +1,12 @@
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Greeting name="Esraa" />;
+}
+
+function Greeting({ name }) {
+  const coach = ["Esraa", "Felix", "Gimena", "Klaus", "Marcel", "Sven"];
+  return (
+    <div>
+      <h1>Hello, {coach.includes(name) ? "Coach" : name}!</h1>
+    </div>
+  );
 }
